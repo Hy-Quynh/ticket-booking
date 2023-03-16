@@ -1,0 +1,16 @@
+POST http://localhost:2020/authentication/register
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "admin123"
+}
+
+###
+POST http://localhost:2020/authentication/login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "admin123"
+}
