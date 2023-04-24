@@ -29,6 +29,7 @@ module.exports.userRegistaion = async (req, res) => {
         .createHmac("sha512", salt)
         .update(req.body.password)
         .digest("base64");
+
     req.body.hashedPassword = salt + "$" + hash;
     let user = await userModel.createUser(req.body);
     user = user.toJSON();

@@ -35,13 +35,13 @@ import history from "../history";
 
 export const signIn = (formValues) => async (dispatch) => {
     try {
-        const res = await axios.post("authentication/login", formValues);
+        const res = await axios.post("http://localhost:2020/authentication/login", formValues);
         if (res.status === 201) {
             dispatch({
                 type: SIGN_IN,
                 payload: res.data,
             });
-            history.push("/");
+            history.push("/admins");
             dispatch(showAlert("Welcome admin!", "success"));
             setTimeout(() => {
                 dispatch(hideAlert());

@@ -35,10 +35,6 @@ function UserList(props) {
                         <Link to={"/admins/" + params.row._id}>
                             <button className="UserListEdit">Edit</button>
                         </Link>
-                        <DeleteOutline
-                            className="UserListDelete"
-                            onClick={() => onDeleteAdmin(params.row)}
-                        />
                     </>
                 );
             },

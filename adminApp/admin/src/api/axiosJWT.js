@@ -3,7 +3,9 @@ import store from '../myStore';
 import jwt_decode from 'jwt-decode';
 import { REFRESH_TOKEN } from '../action/type';
 
-const axiosJWT = axios.create();
+const axiosJWT = axios.create({
+  baseURL: 'http://localhost:2020'
+});
 
 axiosJWT.defaults.headers.common['authorization'] = "Bearer " + store.getState().auth.accessToken;
 

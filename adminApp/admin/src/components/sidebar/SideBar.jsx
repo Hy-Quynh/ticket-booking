@@ -21,14 +21,6 @@ function SideBar(props) {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <Link to="/">
-            <li onClick={() => setSelectedItem(1)} className={`sidebarListItem ${selectedItem === 1 ? 'active' : ''}`}>
-              
-                <LineStyle className="sidebarIcon" />
-                Home
-              
-            </li>
-            </Link>
             <Link to="/admins">
             <li onClick={() => setSelectedItem(2)} className={`sidebarListItem ${selectedItem === 2 ? 'active' : ''}`}>
                 <Group className="sidebarIcon" />

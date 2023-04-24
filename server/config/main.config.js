@@ -1,6 +1,6 @@
 module.exports = {
-    port: process.env.PORT || 3000,
-    mongoUrl: process.env.MONGOURL,
+    port: process.env.PORT || '2020',
+    mongoUrl: 'mongodb+srv://hyquynh:9XvxCGQjwELfXTy2@cluster0.kuj7jbr.mongodb.net/test',
     jwtSecret: process.env.JWTSECRET || "placeholder",
     refreshSecret: process.env.REFRESHSECRET || "refreshholder",
     tokenLife: process.env.TOKENLIFE || "24h",

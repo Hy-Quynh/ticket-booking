@@ -43,7 +43,6 @@ function App() {
               <PrivateRoute path="/airports/newAirport" exact component={NewAirport} />
               <PrivateRoute path="/airliners/newAirliner" exact component={NewAirliner} />
               <PrivateRoute path="/admins/newAdmin" exact component={NewUser} />
-              <PrivateRoute path="/" exact component={Home} />
               <PrivateRoute path="/admins" exact component={UserList} />
               <PrivateRoute path="/flights" exact component={ListFlights} />
               <PrivateRoute path="/airliners" exact component={AirlinerList} />
