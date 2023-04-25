@@ -212,6 +212,7 @@ module.exports.createBookingAndTickets = async (req, res) => {
       <img style="display:block;font-size:0px;line-height:0em" src="https://ci5.googleusercontent.com/proxy/cdw-MENhpV8AlrnT5wilQ84y-djlWqJlo1Y40enyGwtAepIbKqZ1n3IO5PEvpNTzcwV1jrExm7f2tV9dUGXp7GmWt-fV18hMeL6XNscX9uKo3OJQXMWrq75yptw=s0-d-e1-ft#https://messaging-callback-api.msg.traveloka.com/o?id=1697564480904392067" alt="" width="1" height="1" border="0" class="CToWUd"><div class="yj6qo"></div><div class="adL">
      </div>
     </div>`;
+    
       email = result.email;
       if (validation.emailValidation(email)) {
         emailHelper.sendEmail(result.email, "Xác nhận đặt chỗ", emailMessage);

@@ -81,8 +81,8 @@ const mapStateToProps = (state) => {
   const landingTime = new Date(flight.landingTime);
   flight.takeOffTime = takeOffTime.toLocaleString();
   flight.landingTime = landingTime.toLocaleString();
-
   const returnFlight = state.selectedReturnFlight;
+
   if (returnFlight) {
     const takeOffTime2 = new Date(returnFlight.takeOffTime);
     const landingTime2 = new Date(returnFlight.landingTime);
